@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <style>
+    .formstyle{
+        width:130px;
+        height:auto;
+        margin:auto;
+        border:2px solid black;
+
+    }
+    input[type=text]{
+        font-size: 50px;
+        width:40px;
+        background-color:black;
+        color: white;
+        height:40px;
+    }
+    .lbutton{
+        font-size: 20px;
+        width:60px;
+        height:60px;
+        background-color:black;
+        color: black;
+        border-radius: 200px;
+        border-color:black;
+        background-color:gainsboro;
+        text-align:center;
+    }
+    #answerstyle{
+        width:100%;
+        height:80px;
+    }
+    .obutton{
+        font-size: 30px;
+        width:60px;
+        height:60px;
+        background-color:black;
+        color: white;
+        border-radius: 200px;
+        border-color:black;
+        background-color:orange;
+        text-align:center;
+    }
+    .gbutton{
+        font-size: 25px;
+        width:60px;
+        height:60px;
+        background-color:black;
+        color: white;
+        border-radius: 200px;
+        border-color:black;
+        background-color:gray;
+        text-align:center;
+    }
+    td{
+        text-align:center;
+        width:100px;
+        height:50px;
+    }
+    </style>
+    <title>Calculator</title>
+</head>
+<body>
+    <form name="forms">
+    <table bgcolor="black"style="width:100px;">
+        <tr>
+            <td colspan="4"><input type="text" name="answer" id="answerstyle" style="text-align: right;"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="AC" onclick="forms.answer.value=''" id="clear" class="lbutton"></td>
+            <td><input type="button" value="..." onclick="forms.answer.value += '' " class="lbutton"></td>
+            <td><input type="button" value="..." onclick="forms.answer.value += '' " class="lbutton"></td>
+            <td><input type="button" value="÷" onclick="forms.answer.value += '/' " class="obutton"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="9" onclick="forms.answer.value += '9' " class="gbutton"></td>
+            <td><input type="button" value="8" onclick="forms.answer.value += '8' " class="gbutton"></td>
+            <td><input type="button" value="9" onclick="forms.answer.value += '9' " class="gbutton"></td>
+            <td><input type="button" value="x" onclick="forms.answer.value += '*' " class="obutton"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="4" onclick="forms.answer.value += '4' " class="gbutton"></td>
+            <td><input type="button" value="5" onclick="forms.answer.value += '5' " class="gbutton"></td>
+            <td><input type="button" value="6" onclick="forms.answer.value += '6' " class="gbutton"></td>
+            <td><input type="button" value="-" onclick="forms.answer.value += '-' " class="obutton"></td>
+        </tr>        
+        <tr>
+            <td><input type="button" value="1" onclick="forms.answer.value += '1' " class="gbutton"></td>
+            <td><input type="button" value="2" onclick="forms.answer.value += '2' " class="gbutton"></td>
+            <td><input type="button" value="3" onclick="forms.answer.value += '3' " class="gbutton"></td>
+            <td><input type="button" value="+" onclick="forms.answer.value += '+' " class="obutton"></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="button" value="0" onclick="forms.answer.value += '0' " class="gbutton"style="width:100%;"></td>
+            <td><input type="button" value="..." onclick="forms.answer.value += '' " class="gbutton"></td>
+
+            <td><input type="button" value="=" onclick="forms.answer.value = eval(forms.answer.value) " class="obutton"></td>
+        </tr>
+
+    </table>
+</form>
+    <!--    <form name="forms"></table>
+
+            <input type="text" name="answer" id="answerstyle"> <br><br>
+
+            <input type="button" value="1" onclick="forms.answer.value += '1' ">
+            <input type="button" value="2" onclick="forms.answer.value += '2' ">
+            <input type="button" value="3" onclick="forms.answer.value += '3' ">
+            <br><br>
+
+
+            <input type="button" value="4" onclick="forms.answer.value += '4' ">
+            <input type="button" value="5" onclick="forms.answer.value += '5' ">
+            <input type="button" value="6" onclick="forms.answer.value += '6' ">
+            <br><br>
+
+            <input type="button" value="7" onclick="forms.answer.value += '7' ">
+            <input type="button" value="8" onclick="forms.answer.value += '8' ">
+            <input type="button" value="9" onclick="forms.answer.value += '9' ">
+            <br><br>
+
+
+            <input type="button" value="+" onclick="forms.answer.value += '+' ">
+            <input type="button" value="-" onclick="forms.answer.value += '-' ">
+            <input type="button" value="*" onclick="forms.answer.value += '*' ">
+            <br><br>
+
+            <input type="button" value="/" onclick="forms.answer.value += '/' ">
+            <input type="button" value="0" onclick="forms.answer.value += '0' ">
+            <input type="button" value="=" onclick="forms.answer.value = eval(forms.answer.value) ">
+            <br><br>
+
+            <center><input type="button" value="clear all" onclick="forms.answer.value=''" id="clear"></center>
+            
+        </form>
+    -->
+    </div>
+</body>
+</html>
